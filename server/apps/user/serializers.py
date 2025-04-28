@@ -8,7 +8,6 @@ class RegisterSerializer(RegisterSerializer):
     email = serializers.EmailField(required=True)
 
     def validate_email(self, value):
-        # Verifica si el email ya existe en la base de datos
         if User.objects.filter(email=value).exists():
             raise serializers.ValidationError("A user with this email already exists.")
         return value
