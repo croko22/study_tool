@@ -1,0 +1,7 @@
+django
+django-environ
+djangorestframework
+djangorestframework-simplejwt
+dj-rest-auth[with_social]
+markdown 
+django-filter
